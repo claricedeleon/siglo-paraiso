@@ -1,0 +1,468 @@
+
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            .clearfix::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+
+            body {
+                background-color: white;
+                color: darkolivegreen;
+                font-family: 'Quicksand', sans-serif;
+            }
+
+            .topnav {
+                display: contents;
+                width: 95vw;
+                overflow: hidden;
+                background-color: darkkhaki;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 2;
+            }            
+
+            .topnav #myLinks {
+                display: none;
+                background-color: darkkhaki;
+            }
+
+            .topnav a {
+                color: darkolivegreen;
+                padding: 14px 16px;
+                font-size: 17px;
+                display: block;
+            }
+
+            .topnav a.icon {
+                background: darkkhaki;
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav a,
+            .blog-btn {
+                text-decoration: none;
+            }
+
+            .topnav a:hover {
+                background-color: rgb(212, 208, 144);
+                color: darkolivegreen;
+            }
+
+            .active {
+                background-color: white;
+                color: darkolivegreen;
+                font-weight: bold;
+                display: contents;
+            }
+
+            header {
+                display: none;
+            }
+
+            main {
+                margin: auto;
+            }
+
+            .background {
+                width: 95vw;
+                margin: auto;
+            }
+
+            #bg-img {
+                width: 100%;
+                position: relative;
+                z-index: -1;
+            }
+
+            .carousel-inner img {
+                width: 100%;
+                height: 100%;
+              }
+
+            .container {
+                position: relative;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                align-content: space-evenly;
+                width: 100vw;
+                text-align: center;
+                margin-bottom: 35%;
+                padding-top: 5%;
+            }
+
+            .sticky {
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+                z-index: 1;
+              }
+
+            #booknow-btn {
+                width: 35%;
+                background-color: darkolivegreen;
+                color: white;
+                font-size: 140%;
+                padding-top: 4%;
+                text-decoration: none;
+            }
+
+            #booknow-btn:hover {
+                background-color: rgb(122, 153, 69);
+                font-size: 150%;
+                font-weight: bold;
+            }
+
+            .gallery {
+                width: 100%;
+                margin-top: 6%;
+                padding: 0 3% 10% 3%;
+            }
+
+            #main-photo {
+                width: 80%;
+                margin-top: 15px;
+            }
+
+            .photos {
+                margin: 0 auto;
+            }
+
+            .gallery-suite,
+            .gallery-villas,
+            .gallery-amenities,
+            .gallery-landscape {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                background-color: rgba(189, 183, 107, .9);
+                border: 5px double white;
+                border-radius: 5px;
+                padding-top: 15px;
+                margin-bottom: 1%;
+            }
+
+            #first-heading {
+                margin-top: -5%;
+            }
+
+            .gallery-landscape {
+                margin-bottom: -5%;
+            }
+
+            .gallery-suite>img,
+            .gallery-villas>img,
+            .gallery-amenities>img,
+            .gallery-landscape>img {
+                width: 45%;
+                margin-bottom: 15px;
+            }
+
+            .contact {
+                position: relative;
+                width: 90%;
+                margin: 2% auto 10% auto;
+                padding-top: 18%;
+            }
+
+            .form {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                align-items: center; 
+                margin-bottom: 5%;
+            }
+
+            .form,
+            .check-availability {
+                width: 100%;
+            }
+
+            .check-availability {
+                padding: 2% 0;
+                background-color: rgb(202, 197, 125);
+                border-radius: 5px;
+            }
+
+            .check-availability > p {
+                font-size: medium;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .availability-form {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-evenly;
+                font-size: small;
+                text-align: left;
+                margin-top: -3%
+            }
+            
+            td {
+                padding: 1%;
+            }
+
+            .label-length {
+                min-width: 200px;
+            }
+
+            input,
+            select {
+                float: right;
+            }
+
+            input {
+                min-width: 150px;
+            }
+
+            .bottom-links {
+                width: 100%;
+                margin: 0 auto 5% auto;
+                font-size: small;
+            }
+
+            #reservations,
+            #sign-up,
+            #promos,
+            #back-to-top-link{
+                color: darkolivegreen;
+            }
+
+            #reservations:hover,
+            #sign-up:hover,
+            #promos:hover {
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            .social-media-links {
+                width: 100%;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                margin: -3% 0 3% 0;
+            }
+
+            .social-media-icons {
+                width: 20%;
+            }
+            .back-to-top {
+                margin: 0 auto;
+            }
+
+            #back-to-top-link:hover {
+                font-weight: bold;
+                border-radius: 5px;
+                color: darkolivegreen;
+            }
+
+            .footer {
+                width: 100vw;
+                height: 100px;
+                position: fixed;
+                bottom: 0;
+                z-index: 2;
+                margin: auto;
+                background-color: darkkhaki;
+                font-size: 70%;
+                text-align: center;
+                line-height: 18px;
+                padding: 2%;          
+            }
+        
+            @media only screen and (min-width: 476px) {
+                .container {
+                    margin-bottom: 25%;
+                }  
+
+                #booknow-btn {
+                    padding-top: 3%;
+                }            
+                
+                .label-length {
+                    min-width: 100px;
+                }
+            }
+
+            @media only screen and (min-width: 641px) {
+
+                .topnav {
+                    display: none;
+                }            
+
+                header {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    width: 100vw;
+                    background-color: white;
+                    border: 1.75px solid darkkhaki;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+    
+                header,
+                .navbar {
+                    flex-flow: row wrap;
+                    justify-content: space-evenly;
+                    align-items: center;
+                }
+
+                header .header-logo {
+                    width: 10vw;
+                    text-align: center;
+                }
+    
+                #logo {
+                    width: 10vw;
+                }
+    
+                .navbar {
+                    width: 88vw;
+                    padding: 1%;
+                }
+    
+                .navbar>ul {
+                    list-style-type: none;
+                    width: 100%;
+                    margin: 0 auto;
+                }
+    
+                .navbar>li {
+                    line-height: 20px;
+                    float: left;
+                    text-transform: none;
+                    text-align: center;
+                    font-size: medium;
+                }
+    
+                .links:link,
+                .links:visited {
+                    background-color: white;
+                    border: 2px solid darkolivegreen;
+                    color: darkolivegreen;
+                    padding: 5% 10%;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                }
+    
+                .links:hover,
+                .links:active {
+                    background-color: darkolivegreen;
+                    border: 2px solid darkolivegreen;
+                    color: white;
+                }
+    
+                .navbar #current {
+                    background-color: rgb(143, 180, 80);
+                    border: 2px solid darkolivegreen;
+                    color: white;
+                }
+
+                .carousel {
+                    margin-top: 11%;
+                }
+
+                .container {
+                    width: 70vw;
+                    margin-bottom: 17%;
+                }
+
+                .sticky {
+                    top: 18%;
+                  }
+
+                #booknow-btn {
+                    padding-top: 2%;
+                }
+
+                #first-heading {
+                    margin-top: -2%;
+                }
+
+                .gallery-suite>img,
+                .gallery-villas>img,
+                .gallery-amenities>img,
+                .gallery-landscape>img {
+                    width: 30%;
+                }
+
+                .form,
+                .check-availability {
+                    width: 80%;
+                }
+
+                .availability-form {
+                    margin-top: -1%
+                }
+
+                .footer {
+                    padding: 1.5%;            
+                }
+            }
+
+            @media only screen and (min-width: 1008px) {
+                header {
+                    justify-content: space-evenly;
+                }
+
+                .navbar {
+                    width: 80vw;
+                    margin-left: 5%;
+                }
+    
+                .navbar>ul {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                }
+    
+                .navbar>li {
+                    min-width: 20%;
+                    line-height: 30px;
+                }
+
+                .carousel {
+                    margin-top: 8%;
+                }
+
+                .container {
+                    margin-bottom: 13%;
+                }
+
+                .sticky {
+                    top: 16%;
+                  }
+
+                #booknow-btn {
+                    padding-top: 1%;
+                }
+
+                .gallery-suite>img,
+                .gallery-villas>img,
+                .gallery-amenities>img,
+                .gallery-landscape>img {
+                    width: 23%;
+                }
+
+                .footer {
+                    height: 110px;
+                    padding: 1%;            
+                }
+            }

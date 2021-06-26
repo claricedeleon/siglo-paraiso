@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gallery</title>
+
+        <!--Bootstrap 4-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--Carousel-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <!--Styling-->
+        <link rel="stylesheet" type="text/css" href="gallery-style.css">
+
+    </head>
+
+    <body>
+        <div class="topnav">
+            <div>
+                <a href="gallery.html" class="active" id="active">Photo Gallery</a>
+            </div>
+            <div id="myLinks">
+                <a href="index.html">Siglo Paraiso</a>
+                <a href="#about.html">About Us</a>
+                <a href="rooms.html">Villas & Suite</a>
+                <a href="events.html">The Events</a>
+                <a href="contact-us.html">Contact Us</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <header class="clearfix">
+            <div class="header-logo">
+                <a href="index.html"><img src="images/logo.png" id="logo" alt="Logo"></a>
+            </div>
+            <nav class="navbar">
+                <ul class="navbar">
+                    <li><a class="links" href="about.html">Siglo Paraiso</a></li>
+                    <li><a class="links" href="rooms.html">Villas & Suite</a></li>
+                    <li><a class="links" href="events.html">The Events</a></li>
+                    <li><a class="links" href="gallery.html" id="current">Photo Gallery</a></li>
+                    <li><a class="links" href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <main>
+            <div id="images" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#images" data-slide-to="0" class="active"></li>
+                    <li data-target="#images" data-slide-to="1"></li>
+                    <li data-target="#images" data-slide-to="2"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/carousel-villas.jpg" alt="Villas" width="1100" height="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/carousel-pool.jpg" alt="Pool" width="1100" height="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/carousel-suite.jpg" alt="Suite" width="1100" height="500">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#images" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#images" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+
+            <div class="container clearfix">
+                <a href="#" class="sticky" id="booknow-btn">
+                    <p id="booknow-text">BOOK</p>
+                </a>
+                <div class="gallery">
+                    <h5>Photo Gallery</h5>
+                    <div class="main">
+                        <figure>
+                            <img src="images/cover-photo.jpg" id="main-photo" alt="Siglo Paraiso Function Hall">
+                            <figcaption><small>Siglo Paraiso Function Hall Facade & Mini Park</small></figcaption>
+                        </figure>
+                    </div>
+                    <br>
+                    <div class="photos">
+                        <h5 id="first-heading">Family Suite</h5>
+                        <div class="gallery-suite">
+                            <img src="images/family_suite3.jpg" alt="Family Suite 1of7">
+                            <img src="images/family_suite6.jpg" alt="Family Suite 2of7">
+                            <img src="images/family_suite7.jpg" alt="Family Suite 3of7">
+                            <img src="images/family_suite8.jpg" alt="Family Suite 4of7">
+                            <img src="images/family_suite2.jpg" alt="Family Suite 5of7">
+                            <img src="images/family_suite4.jpg" alt="Family Suite 6of7">
+                            <img src="images/family_suite5.jpg" alt="Family Suite 7of7">
+                            <img src="images/family_suite9.jpg" alt="Family Suite 8of8">
+                        </div>
+                        <br>
+                        <h5>Villas</h5>
+                        <div class="gallery-villas">
+                            <img src="images/villa2.jpg" alt="Villas 1of6">
+                            <img src="images/villa3.jpg" alt="Villas 2of6">
+                            <img src="images/villa4.jpg" alt="Villas 3of6">
+                            <img src="images/villa5.jpg" alt="Villas 4of6">
+                            <img src="images/villa6.jpg" alt="Villas 5of6">
+                            <img src="images/villas.jpg" alt="Villas 6of6">
+                        </div>
+                        <br>
+                        <h5>Amenities</h5>
+                        <div class="gallery-amenities">
+                            <img src="images/function_hall.jpg" alt="Function Hall">
+                            <img src="images/window3.jpeg" alt="Function Hall capiz window">
+                            <img src="images/gazebo.jpg" alt="Gazebo">
+                            <img src="images/pool2.jpg" alt="Swimming pool 1of2">
+                            <img src="images/pool3.jpg" alt="Swimming pool 2of2">
+                            <img src="images/basketball2.jpeg" alt="Basketball court 1of2">
+                            <img src="images/basketball.jpeg" alt="Basketball court 2of2">
+                            <img src="images/bonfire.jpeg" alt="Bonfire 1of2">
+                            <img src="images/bonfire2.jpg" alt="Bonfire 2of2">
+                            <img src="images/chapel.jpg" alt="Chapel 1of3">
+                            <img src="images/chapel2.jpeg" alt="Chapel 2of3">
+                            <img src="images/chapel3.jpeg" alt="Chapel 3of3">
+                        </div>
+                        <br>
+                        <h5>Landscape</h5>
+                        <div class="gallery-landscape">
+                            <img src="images/greenhouse.jpeg" alt="Greenhouse 1of3">
+                            <img src="images/greenhouse2.jpeg" alt="Greenhouse 2of3">
+                            <img src="images/greenhouse.jpg" alt="Greenhouse 3of3">
+                            <img src="images/surrounding10.jpg" alt="Landscape and Trees 1of7">
+                            <img src="images/surrounding3.jpeg" alt="Landscape and Trees 2of7">
+                            <img src="images/surrounding4.jpeg" alt="Landscape and Trees 3of7">
+                            <img src="images/surrounding5.jpeg" alt="Landscape and Trees 4of7">
+                            <img src="images/surrounding9.jpeg" alt="Landscape and Trees 5of7">
+                            <img src="images/surrounding11.jpg" alt="Landscape and Trees 6of7">
+                            <img src="images/surrounding7.jpeg" alt="Landscape and Trees 7of7">
+                        </div>
+                    </div>
+                </div>
+                <div class="form">
+                    <div class="check-availability">
+                        <p>Check Availability</p>
+                        <form class="availability-form">
+                            <table>
+                                <tr>
+                                    <td><label for="arrival" id="arrival">Arrival Date: </label></td>
+                                    <td><input type="date" name="arrival" /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="departure" id="departure">Departure Date:</label></td>
+                                    <td><input type="date" name="departure" /></td>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <td class="label-length"><label for="adults" id="adults">No. of Adults:</label></td>
+                                    <td><select name="adults">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
+                                            <option>13</option>
+                                            <option>14</option>
+                                            <option>> 15</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="label-length"><label for="children" id="children">No. of
+                                            Children:</label></td>
+                                    <td><select name="children">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                            <option>7</option>
+                                            <option>8</option>
+                                            <option>9</option>
+                                            <option>10</option>
+                                            <option>11</option>
+                                            <option>12</option>
+                                            <option>13</option>
+                                            <option>14</option>
+                                            <option>>15</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+                <div class="bottom-links">
+                    <a href="#" id="reservations">My Reservations</a> |
+                    <a href="#" id="sign-up">Sign up</a> |
+                    <a href="#" id="promos">Check out promos</a>
+                </div>
+                <div class="social-media-links">
+                    <a href="#" id="facebook"><img src="images/facebook-icon.png" class="social-media-icons"
+                            alt="Facebook logo"></img></a>
+                    <a href="#" id="instagram"><img src="images/instagram-icon.png" class="social-media-icons"
+                            alt="Instagram logo"></img></a>
+                    <a href=" #" id="messenger"><img src="images/messenger-icon.png" class="social-media-icons"
+                            alt="Messenger logo"></img></a>
+                </div>
+                <div class=" back-to-top"><a href="gallery.html" id="back-to-top-link">Back to top</a>
+                </div>
+            </div>
+            <div class="footer">
+                <p>
+                    Siglo Paraiso Resort Farm
+                    <br>
+                    575 Narra Street., Kayquit III, Indang, Cavite 4122
+                    <br>
+                    Tel: (046) 1234 3434
+                    <br>
+                    Email: sigloparaiso@yahoo.com
+                </p>
+            </div>
+        </main>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
